@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/for.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #08d215;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-link:hover {
+  color: #fff;
+  background-color: forestgreen;
+}
+
+.map {
+  width: 1000px;
+  margin: 0 450px;
+}
+
+.catalog-list {
+  list-style: none;
+  background-color: #08d215;
+  color: #fff;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.catalog-item {
+  margin-bottom: 20px;
+}
+
+.catalog-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.catalog-item-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  padding: 5px 0;
+}
+
+.form {
+  background-color: #08d215;
+  color: #fff;
+  width: 400px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
+
+.fieldset {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+
+.legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 0 8px;
+  color: #fff;
+}
+
+.uniform-border {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form button {
+  background-color: #fff;
+  color: #08d215;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.form select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.form select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  backdrop-filter: blur(10px);
+}
+
+.picture {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.article-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  margin: 0 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.article {
+  background-color: #08d215;
+  margin: 0 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.article-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: forestgreen;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.part {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.part:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #08d215;
+  padding: 20px 0;
+  margin-top: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+
+
+
+
+
+
